@@ -27,8 +27,8 @@
 
 Результатом обработки поискового запроса является набор из максимум пяти наиболее релевантных документов. В качестве метрики релевантности используется суммарное количество вхождений всех слов запроса в документ. Например, допустим, имеется поисковая база из трёх документов: "london is the capital of great britain", "moscow is the capital of the russian federation", "paris is the capital of france", — и поисковый запрос "the best capital". Тогда метрика релевантности документов будет такой:
 
-	london is the capital of great britain — 2 (слово "the" входит в документ 1 раз, слово "best" — 	ни разу, слово "capital" — 1 раз)
-	moscow is the capital of the russian federation — 3 (слово "the" входит в документ 2 раза, 		слово "best" — ни разу, слово "capital" — 1 раз)
+	london is the capital of great britain — 2 (слово "the" входит в документ 1 раз, слово "best" — ни разу, слово "capital" — 1 раз)
+	moscow is the capital of the russian federation — 3 (слово "the" входит в документ 2 раза, слово "best" — ни разу, слово "capital" — 1 раз)
 	paris is the capital of france — 2 ("the" — 1, "best" — 0, "capital" — 1)
 
 В итоге получается, что документ "moscow is the capital of the russian federation" оказывается наиболее релевантным запросу "the best capital".
